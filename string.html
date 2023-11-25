@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="InputValidator.js"></script>
+</head>
+<body>
+    
+<form>
+    <!--Below are the user inputs-->
+    First Name: <input type = "text" id = "firstname" name = "use_name" value = "">
+    Last Name: <input type = "text" id = "lastname" name = "use_last_name" value = "">
+    <br>
+    <br>
+    Custom Word: <input type = "text" id = "customword" name = "custom_word" value = "">
+    
+    <br>
+    <br>
+    <label for="zipcode"> Area Zip Code: </label>
+
+    <input type = "number" id = "zipcode" name = "zip" value = "">
+    <script> //prevents the zipcode being longer than 5 digits
+        zipcode.oninput = function () {
+        if (this.value.length > 5)
+            this.value = this.value.slice(0,5); 
+    }
+    </script>
+    <p id = "secretmessage" hidden>hey good job entering a 5 digit zip code even though I forced you to enter at most 5 numbers</p> <!--message only revealed when zipcode ented is 5 characters long-->
+    <style>
+        body {
+            background-color: peachpuff;
+            color: chocolate;
+        }
+        p{
+            color:blueviolet;
+        }
+    </style>
+
+    <br>
+    <br>
+    <!--<input type="button" value="Submit">-->
+    <button onClick="validateinput();">Submit</button>
+    <!--<input type="submit" value="Submit">-->
+    
+</form>
+
+<br>
+<!--general error message-->
+<div class="ErrorMessage">
+    <div id = "errormesage"></div>
+    <style>
+        .ErrorMessage {
+            -webkit-text-fill-color: red;
+        }
+    </style>
+</div>
+
+<form>
+    <div class="myDiv4">
+        <div id = "FullName">Full Name: </div>
+    </div>
+</form>
+
+
+<br>
+
+<!--
+
+<nav>
+    <a href="game.html">Click here to play a little game</a>
+    <br>
+    <a href="Index.html">Click here to read a stonks fact</a>
+</nav>
+
+<style>
+    a{
+        color:green;
+    }
+    nav{
+        line-height: 30px;
+    }
+    body{
+        margin-left: 30px;
+        margin-top : 30px;
+    }
+</style>
+-->
+<style>
+    form {
+        text-align: center; /*centers form contents*/
+    }
+</style>
+
+
+</body>
+</html>
