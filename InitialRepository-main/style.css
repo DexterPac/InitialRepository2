@@ -1,0 +1,64 @@
+body {
+    background-color: peachpuff;
+    color: chocolate;
+}
+
+img {
+    
+    /*
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+    */
+      
+
+    position:absolute; 
+
+    top: 750px;
+    left: 1000px;
+      
+      /*margin-right: 200px;*/
+}
+
+nav {
+    height: 200px;
+    /*width: 200px;
+    float: left;*/
+    padding: 5px;
+    line-height: 30px;
+    font-size: 30px;
+    /*margin-left: 550px;*/
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-right: 200px;
+}
+
+h2 {
+    text-align: center;
+    
+}
+
+article {
+    /*margin-left: 450px;*/
+    font-size: 30px;
+    text-align: center;
+}
+
+.button {  
+    width: 50%;
+    height: 50px;
+    background-color: chocolate;
+    color: beige;
+    font-size: 30px;
+}
+
+.myeventDiv {
+    text-align: center;
+}
+
+
+
